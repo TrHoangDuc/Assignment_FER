@@ -27,6 +27,7 @@ const News=(props)=> {
     setLoading(false);
     props.setProgress(100)
   }
+
   useEffect(()=>{
     document.title=`${(props.category).charAt(0).toUpperCase()+(props.category).slice(1)} - NewsZilla`;
     updateNews();
